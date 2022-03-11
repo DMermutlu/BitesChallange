@@ -1,0 +1,21 @@
+1-  Testleri koşmaya başlamadan önce Cases.setUp'tan browser tanımlaması yapmak gerekmektedir.
+
+2-  Testler 2 browser üzerinde koşacak şekilde kodlanmıştır, browserName değişkenine koşmak istenilen
+browser adı girilir (GoogleChrome için chrome, MozillaFirefox için firefox)
+
+3- testler testng.xml'i tetiklenerek çalıştırılmalıdır.
+
+4- kod toplamda 4 senaryo içermektedir
+            1 tane happy path login case
+            2 tane sad path login case
+            1 tane taskta istenen case
+
+5- Login bilgileri için (username & password) bir değişiklik yapılmasına gerek yoktur.
+Hepsi xml'de tanımlanmıştır.
+
+6- Projede yer alan 2 fail case için fail ettikleri anın screenshot'ları
+method isimleri ile birlikte screenshots klasörünün altına eklenmektedir.
+
+7- testler tamamlandıktan sonra testler ile ilgili results report'a test-output altından
+emailable-report.html-> open in browser seçeneğinden erişilebilir
+

@@ -1,0 +1,12 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 106.113 s <<< FAILURE! - in TestSuite
+Cases.loginFailCaseInvalidCredentials[adfasfsa@yopmail.com, !Q2w3e4r](1)  Time elapsed: 7.949 s  <<< FAILURE!
+java.lang.AssertionError: Authentication failed, either mail address or password is wrong 
+	at Cases.loginFailCaseInvalidCredentials(Cases.java:76)
+
+Cases.loginFailCaseInvalidEmailAddress[adfasfsa, !Q2w3e4r](1)  Time elapsed: 6.132 s  <<< FAILURE!
+java.lang.AssertionError: Invalid email address
+	at Cases.loginFailCaseInvalidEmailAddress(Cases.java:97)
+

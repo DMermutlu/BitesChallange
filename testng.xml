@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite" thread-count="2" parallel="tests">
+    <test verbose="2" preserve-order="true" name="/Users/dogukanmermutlu/IdeaProjects/BitesChallenge">
+        <classes>
+
+            <class name="Cases">
+                <methods>
+                    <include name="loginSuccessCase">
+                        <parameter name="u" value="biteschallenge@yopmail.com"/>
+                        <parameter name="p" value="!Q2w3e4r"></parameter>
+                    </include>
+                    <include name="loginFailCaseInvalidCredentials">
+                        <parameter name="u" value="adfasfsa@yopmail.com"></parameter>
+                        <parameter name="p" value="!Q2w3e4r"></parameter>
+                    </include>
+                    <include name="loginFailCaseInvalidEmailAddress">
+                        <parameter name="u" value="adfasfsa"></parameter>
+                        <parameter name="p" value="!Q2w3e4r"></parameter>
+                    </include>
+                    <include name="happyPathScenario">
+                        <parameter name="u" value="biteschallenge@yopmail.com"></parameter>
+                        <parameter name="p" value="!Q2w3e4r"></parameter>
+                        <parameter name="item" value="Printed Dress"></parameter>
+                    </include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

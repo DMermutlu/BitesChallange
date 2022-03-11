@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="tests" name="Failed suite [All Test Suite]" guice-stage="DEVELOPMENT" verbose="0">
+  <test thread-count="2" parallel="tests" name="/Users/dogukanmermutlu/IdeaProjects/BitesChallenge(failed)" verbose="0">
+    <classes>
+      <class name="Cases">
+        <methods>
+          <include name="setUp"/>
+          <include name="loginFailCaseInvalidCredentials" invocation-numbers="0">
+            <parameter name="p" value="!Q2w3e4r"/>
+            <parameter name="u" value="adfasfsa@yopmail.com"/>
+          </include> <!-- loginFailCaseInvalidCredentials -->
+          <include name="loginFailCaseInvalidEmailAddress" invocation-numbers="0">
+            <parameter name="p" value="!Q2w3e4r"/>
+            <parameter name="u" value="adfasfsa"/>
+          </include> <!-- loginFailCaseInvalidEmailAddress -->
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- Cases -->
+    </classes>
+  </test> <!-- /Users/dogukanmermutlu/IdeaProjects/BitesChallenge(failed) -->
+</suite> <!-- Failed suite [All Test Suite] -->
